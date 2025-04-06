@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Red: hsl(4, 100%, 67%);
+  --Blue-800: #242742;
+  --Blue-700: hsl(235, 18%, 26%);
+  --Grey: #949494;
+  --White: hsl(0, 0%, 100%);
+
+  --W-400: 400;
+  --W-700: 700;
+
+  --font-Roboto: "Roboto";
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-Roboto);
+  background-color: var(--Blue-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Blue-800);
+}
+
+.container {
+  background-color: var(--White);
+  max-width: 58rem;
+  border-radius: 2.25rem;
+  padding: 1.5rem;
+  display: flex;
+}
+.container-form {
+  align-content: center;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: var(--W-700);
+  margin-bottom: 1.5rem;
+}
+.container-form > p {
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+  font-weight: var(--W-700);
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.container-form form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email-Input {
+  border-radius: 0.5rem;
+  font: inherit;
+  padding: 1rem;
+  color: var(--Grey);
+  border: 1px solid var(--Grey);
+}
+
+.email-Input::placeholder {
+  color: var(--Grey);
+  font-weight: var(--W-400);
+}
+
+.button-Input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--White);
+  font: inherit;
+  border: 0;
+  background-color: var(--Blue-800);
+  font-weight: var(--W-700);
+}
+.button-Input:hover,
+.button-Input:focus-visible {
+  position: relative;
+  background-image: linear-gradient(90deg, #fe5279 0%, #ff693e 100%);
+  cursor: pointer;
+}
+
+.button-Input:hover::after,
+.button-Input:focus-visible::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: inherit;
+  border-radius: inherit;
+  translate: 0 1.5rem;
+  filter: blur(1rem);
+  opacity: 0.25;
+}
+
+@media (max-width: 650px) {
+  body {
+    min-height: 100%;
+    font-family: var(--font-Roboto);
+    display: inline;
+    color: var(--Blue-800);
+  }
+
+  .container {
+    background-color: var(--White);
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-flow: wrap-reverse;
+    border-radius: 0;
+  }
+  .container-form {
+    align-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: var(--W-400);
+    margin-bottom: 1.5rem;
+  }
+}

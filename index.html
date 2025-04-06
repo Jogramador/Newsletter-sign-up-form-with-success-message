@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/icon-success.svg"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-form">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</ps>
+        <ul class="list">
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span>And much more!</span>
+          </li>
+        </ul>
+
+        <form action="/Congratulations.html">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="email-Input"
+              placeholder="email@company.com"
+            />
+          </div>
+
+          <button id="button" class="button-Input">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <picture>
+        <source
+          media="(max-width:650px)"
+          srcset="/assets/images/illustration-sign-up-mobile.svg"
+        />
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </picture>
+    </div>
+
+ 
+    <script src="main.js"></script>
+  </body>
+</html>
