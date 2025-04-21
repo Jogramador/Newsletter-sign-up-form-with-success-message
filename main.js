@@ -1,4 +1,14 @@
-// const getEmail = document.getElementById("email");
-// const getBtn = document.getElementById("button");
+const form = document.getElementById("form");
+const btn = document.querySelector("button");
 
-// getBtn.
+function handlesubmit(evento) {
+  evento.preventDefault();
+}
+
+function testando() {
+  alert("testando evento no botão!");
+}
+
+form.addEventListener("submit", handlesubmit);
+
+btn.addEventListener("click", testando);

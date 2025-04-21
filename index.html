@@ -39,9 +39,14 @@
           </li>
         </ul>
 
-        <form action="/Congratulations.html">
+        <form id="form" action="/Congratulations.html">
           <div class="form-group">
-            <label for="email">Email address</label>
+
+            <div class="containerlabelEmail">
+              <label for="email">Email address</label>
+              <label id="errorLabel" class="errorMessage">Valid email required</label>
+            </div>
+            
             <input
               id="email"
               name="email"

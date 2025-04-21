@@ -81,7 +81,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
-
+/* =================================================================== */
 body {
   min-height: 100vh;
   font-family: var(--font-Roboto);
@@ -138,6 +138,18 @@ h1 {
   gap: 0.5rem;
 }
 
+.containerlabelEmail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerlabelEmail label {
+  font-weight: var(--W-400);
+  font-size: 0.75rem;
+}
+.errorMessage {
+  color: #e67e7b;
+}
 .email-Input {
   border-radius: 0.5rem;
   font: inherit;
