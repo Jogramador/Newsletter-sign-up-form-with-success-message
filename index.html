@@ -23,7 +23,7 @@
     <div class="container">
       <div class="container-form">
         <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</ps>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <ul class="list">
           <li>
             <img src="./assets/images/icon-list.svg" alt="" />
@@ -39,20 +39,22 @@
           </li>
         </ul>
 
-        <form id="form" action="/Congratulations.html">
+        <form id="form">
           <div class="form-group">
-
             <div class="containerlabelEmail">
               <label for="email">Email address</label>
-              <label id="errorLabel" class="errorMessage">Valid email required</label>
+              <label id="errorLabel" class="errorMessage display-none"
+                >Valid email required</label
+              >
             </div>
-            
+
             <input
               id="email"
               name="email"
               type="email"
               class="email-Input"
               placeholder="email@company.com"
+              required
             />
           </div>
 
@@ -70,7 +72,6 @@
       </picture>
     </div>
 
- 
     <script src="main.js"></script>
   </body>
 </html>

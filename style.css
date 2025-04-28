@@ -163,6 +163,15 @@ h1 {
   font-weight: var(--W-400);
 }
 
+.email-Input-Error {
+  background-color: #ffe8e6;
+  border: 1px solid #e67e7b;
+  color: #e67e7b;
+}
+.display-none {
+  display: none;
+}
+
 .button-Input {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -198,6 +207,10 @@ h1 {
     font-family: var(--font-Roboto);
     display: inline;
     color: var(--Blue-800);
+  }
+
+  picture img {
+    width: 100%;
   }
 
   .container {
